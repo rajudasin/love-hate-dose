@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    
+   
+}
+
+.bg-image{
+    background-image: url('./images/bg-final.png');
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+    padding: 20px ;
+    
+}
+
+.main figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    
+}
+
+.btn-con {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+.btn {
+    font-size: 30px;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    box-shadow: 0px 0px 6px rgb(177, 176, 176);
+    transition: transform 0.3s ease-in-out ;
+}
+.btn:hover{
+     transform: scale(0.9);
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.btn-love {
+    background-image: linear-gradient(323deg, #e400ff, red);
+}
+
+.btn-hate {
+    background-image: linear-gradient(20deg, black, #ff0200);
+}
+
+
+/* responsive for mobile */
+@media screen and (max-width:500px){
+     html,body{
+        margin: 0px ;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+     }
+     .btn-con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items: center;
+        
+    }
+    .btn{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+}
